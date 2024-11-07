@@ -6,6 +6,8 @@ import blockchain from '../images/blockchain.svg';
 import btc from '../images/Bitcoin.svg';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Image from 'next/image';
+import airdrop from '../images/airdrop.svg';
+
 
 const BTCPage = () => {
   const [inputText, setInputText] = useState('Satoshi Nakamoto');
@@ -59,10 +61,19 @@ const BTCPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center font-hacker justify-center">
-      <div className="flex flex-col bg-white shadow-lg rounded-lg p-8 w-full max-w-md items-center">
+      <div className="flex flex-col bg-white shadow-lg rounded-lg p-12 w-full max-w-md items-center relative ">
+        <a href="https://t.me/ggeese_bot" target="_blank" rel="noopener noreferrer">
+          <Image
+            className="absolute top-0 right-0 cursor-pointer animate-pulse"
+            src={airdrop.src}
+            alt="Airdrop Icon"
+            width={64}
+            height={64}
+          />
+        </a>
         <div className="flex flex-col items-center mb-6">
           <Image className='mb-3' src={btc.src} alt="Bitcoin Logo" width={64} height={64} />
-          <h1 className="text-3xl font-bold text-gray-800 text-center">Hack Bitcoin</h1>
+          <h1 className="text-3xl font-bold text-gray-800 text-center">Free Bitcoin</h1>
         </div>
 
         <div className="w-full mb-4">
@@ -158,12 +169,12 @@ const BTCPage = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-3 text-center">
+        
           <p className="text-sm text-gray-600 mb-2">
           made with ❤️ by GG
 
           </p>
-          <p className="text-2sm text-gray-600 font-bold mb-2">
-            Airdrop:  
+          <p className="text-2sm text-gray-600 font-bold mb-2">  
             <a 
               href="https://ggeese.fun" 
               target="_blank" 
